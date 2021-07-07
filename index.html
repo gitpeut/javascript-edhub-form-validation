@@ -3,8 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <title>Form validation</title>
+    <script src="main.js"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body id="body">
+
+<div class="signup">
+    <form>
+        <div class="signup-title">Registreren</div>
+        <label for="username">
+            Gebruikersnaam:
+            <input id="username" type="text" name="username"/>
+            <div id="userwarn" class="input-warning">username must not contain @ </div>
+        </label>
+        <label for="password">
+            Wachtwoord:
+            <input id="password" type="password" name="password"/>
+            <div id="passwordwarn" class="input-warning">password must be at least 6 characters long</div>
+        </label>
+    </form>
+</div>
+
+<script>
+    initPage();
+</script>
 
 </body>
 </html>

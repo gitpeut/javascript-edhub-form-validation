@@ -1,0 +1,64 @@
+body {
+    font: 12px Arial, sans-serif;
+    background-image: linear-gradient(to right, cornflowerblue,lightblue,cornflowerblue);
+}
+
+.signup-title{
+    padding-left: 0px;
+
+    margin: 20px;
+    margin-left:  0px;
+
+    font-weight: bolder;
+    font-size: 24px;
+    color: darkblue;
+}
+
+.signup {
+    margin: 100px;
+    color: darkblue;
+    display: flex;
+    /* row is de default, maar voor nu ter verduidelijking*/
+    flex-direction: row;
+    /* uitlijning van begin tot eind (omdat direction = row is dat in dit geval links naar rechts, horizontaal )*/
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    /* uitlijning van begin tot eind (omdat direction = column is dat in dit geval boven tot onder, verticaal)*/
+    justify-content: center;
+    /* uitlijning haaks op de flex-richting (omdat direction = column is dat in dit geval links naar rechts, horizontaal) */
+    align-items: start;
+}
+
+label{
+    margin-bottom: 20px;
+}
+
+input {
+    margin-top: 5px;
+    border: 0px none;
+    width: 300px;
+}
+
+input:focus{
+    outline: none;
+    background-color: lightyellow;
+}
+
+
+form label {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-warning{
+    color: orangered;
+    font-size: 11px;
+    font-weight: bold;
+    margin-top: 5px;
+    visibility: hidden;
+}
+
