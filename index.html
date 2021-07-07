@@ -18,14 +18,20 @@
         </label>
         <label for="password">
             Wachtwoord:
-            <input id="password" type="password" name="password"/>
+            <div>
+                <input id="password" type="password" name="password"/>
+                <div id="pwstrength">&nbsp;</div>
+            </div>
             <div id="passwordwarn" class="input-warning">password must be at least 6 characters long</div>
+
         </label>
+
+
     </form>
 </div>
 
 <script>
-    initPage();
+    initIndex();
 </script>
 
 </body>
